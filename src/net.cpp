@@ -47,7 +47,7 @@ uint64 nLocalServices = (fClient ? 0 : NODE_NETWORK);
 CAddress addrLocalHost("0.0.0.0", 0, false, nLocalServices);
 static CNode* pnodeLocalHost = NULL;
 uint64 nLocalHostNonce = 0;
-array<int, 10> vnThreadsRunning;
+boost::array<int, 10> vnThreadsRunning;
 static SOCKET hListenSocket = INVALID_SOCKET;
 
 vector<CNode*> vNodes;
